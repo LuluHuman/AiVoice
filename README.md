@@ -4,47 +4,17 @@ This guide will walk you through the process of setting up a Voice-to-Voice AI s
 
 ## Prerequisites
 
-Before starting the setup process, ensure that you have the following prerequisites:
+Before starting the setup process, ensure that you have the following:
 
-1. OpenAI API Access: Make sure you have Ultimate Vocal Remover. If you don't have access, visit the [OpenAI website](https://openai.com) to sign up and get an API key.
-2. Python: Install Python on your system. The setup process assumes you have Python 3.6 or higher installed.
-3. OpenAI Python Library: Install the OpenAI Python library using the following command:
-
-   ```shell
-   pip install openai
-   ```
-
-4. Sound Playback: Ensure your system has the necessary sound playback capabilities, such as speakers or headphones, to hear the generated speech.
+1. Ultimate Vocal Remover: Make sure you have Ultimate [Vocal Remover](https://ultimatevocalremover.com/).For voice conversion, this will help by not converting  intrumentals. For training, this will help make the erquality of the dataset better.
+2. Audio slicer: this will split up the dataset **for trining(Not required for voice conversion)* 
+3. Google Collab: You'll need this to run the programm https://colab.research.google.com/github/LuluHuman/AiVoice/edit/main/RBVC_WebUI.ipynb
 
 ## Setting Up Voice-to-Voice AI
 
-Follow the steps below to set up Voice-to-Voice AI:
-
-1. Clone the Repository: Clone the repository that contains the code for the Voice-to-Voice AI setup. Use the following command in your terminal or command prompt:
-
-   ```shell
-   git clone <repository_url>
-   ```
-
-2. API Configuration: Open the cloned repository and locate the `config.py` file. In this file, set the `OPENAI_API_KEY` variable to your OpenAI API key.
-
-3. Install Dependencies: Navigate to the repository's root directory and install the required dependencies using the following command:
-
-   ```shell
-   pip install -r requirements.txt
-   ```
-
-4. Starting the Application: Run the application using the following command:
-
-   ```shell
-   python app.py
-   ```
-
-5. Access the Web Interface: Once the application is running, open a web browser and visit `http://localhost:5000` to access the web interface.
-
-6. Using the Voice-to-Voice AI: In the web interface, enter the desired text input in the provided text box and click the "Submit" button. The AI model will process the input and generate natural-sounding speech output.
-
-7. Listening to the Speech Output: Ensure that your system's sound playback is functioning correctly, and you have audio output devices connected. You should be able to hear the generated speech through your speakers or headphones.
+1. Under `Install dependencies` click on the start/play button on the left. This will install the required files
+2. After installing the files you would see a tick. Then do the same for `Load WEB GUI`
+3. Below `Show code` you would see a url like this `https://bd399b5556668d9f2a.gradio.live/` click on the url
 
 ## Customization and Advanced Options
 
